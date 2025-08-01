@@ -11,7 +11,7 @@ pipeline{
     }
      stage('sonarqube'){
       when {
-        branch 'develope'
+        branch 'develop'
       }
       steps{
         echo 'static scan done...'
