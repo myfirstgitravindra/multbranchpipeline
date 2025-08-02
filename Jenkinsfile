@@ -1,5 +1,7 @@
 pipeline{
-  agent any
+  agent {
+        label 'linux1'
+    }
   stages{
     stage('git checkout'){
       when {
